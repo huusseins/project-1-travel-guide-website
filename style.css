@@ -1,8 +1,8 @@
 /* Navbar */
 
 .navbar {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 
 .nav-link {
@@ -75,6 +75,11 @@
         padding-top: 100px;
     }
 
+    /* Card */
+    .card {
+        min-width: 21rem;
+    }
+
     /* Modal */
     .modal-footer button {
         position: relative;
@@ -82,11 +87,11 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
 
     /* card */
     .card {
-        width: 19rem;
+        min-width: 19rem;
     }
 }
 
@@ -94,7 +99,7 @@
 
     /* card */
     .card {
-        width: 32rem;
+        min-width: 32rem;
     }
 }
 
