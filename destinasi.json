@@ -1,0 +1,30 @@
+{
+    "destinasi": [{
+            "country": "turkey",
+            "attraction": "cappadocia",
+            "location": "central anatolia",
+            "summary": "Cappadocia is a beautiful region in central Turkey famous for its fairytale scenery, cave dwellings, remarkable rock formations and, of course, the hundreds of hot air balloons that soar in the sky during sunrise each morning.",
+            "description": "Cappadocia is a beautiful region in central Turkey famous for its fairytale scenery, cave dwellings, remarkable rock formations and, of course, the hundreds of hot air balloons that soar in the sky during sunrise each morning According to Herodotus, in the time of the Ionian Revolt(499 BC),the Cappadocians were reported as occupying a region from Mount Taurus to the vicinity of the Euxine(Black Sea).Cappadocia, in this sense, was bounded in the south by the chain of the Taurus Mountains that separate it from Cilicia, to the east by the upper Euphrates, to the north by Pontus, and to the west by Lycaonia and eastern Galatia. < br > < br > The name, traditionally used in Christian sources throughout history, continues in use as an international tourism concept to define a region of exceptional natural wonders, in particular characterized by fairy chimneys and a unique historical and cultural heritage.",
+            "price": 20000,
+            "image": "cappadocia2.jpg"
+        },
+        {
+            "country": "indonesia",
+            "attraction": "kei island",
+            "location": "maluku",
+            "summary": "When you are flying over Kei Islands, Southeast Maluku, you will see for yourself the breath-taking view of this clusters of 119 islands. From the air, Kei --or Nuhu Evav as locals call it--is a perfect illustration of tropical getaway.",
+            "description": "When you are flying over Kei Islands, Southeast Maluku, you will see for yourself the breath-taking view of this clusters of 119 islands. From the air, Kei --or Nuhu Evav as locals call it--is a perfect illustration of tropical getaway. The day-long sun, clear blue sky, glassy sea water, and the quiet beaches are what you can expect from the islands 550-kilometer southeast of Ambon.<br><br>Administratively, Kei Islands is constituted by Southeast Maluku Regency with Langgur as its capital, and Tual City that is situated in Lesser Kai Island.",
+            "price": 5000,
+            "image": "kei.jpg"
+        },
+        {
+            "country": "thailand",
+            "attraction": "the grand palace",
+            "location": "bangkok",
+            "summary": "There are plenty of things to see and do in the Bangkok, but the Grand Palace should definitely be at the top of your list. This is the number one attraction, and it's staggering in both historical significance and craftsmanship.",
+            "description": "Even if your plans for Thailand mainly involve frolicking on a beach and eating as much Massaman curry and pad Thai as humanly possible, you'll probably spend at least a day or two in Bangkok. There are plenty of things to see and do in the capital, but the Grand Palace should definitely be at the top of your list. This is the number one sightseeing attraction in the city, and it's staggering in both historical significance and craftsmanship.<br><br>The grounds are a maze of royal halls, temples, and ancient relics, the most important being Wat Phra Kaeo (the Temple of the Emerald Buddha), said to hold a fragment of either hair or bone from the enlightened Buddha himself.<br><br>Allow several hours to do the Grand Palace justice, but if you're up for more walking afterward, you can easily take in some of the city's other major landmarks nearby. The famous Wat Po and Wat Arun, the Temple of the Dawn (a great place to watch the sunset), are just a few minutes away.",
+            "price": 3500,
+            "image": "grandpalace.jpg"
+        }
+    ]
+}

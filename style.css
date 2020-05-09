@@ -1,4 +1,10 @@
 /* Navbar */
+
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .nav-link {
     margin-left: 20px;
 }
@@ -33,12 +39,13 @@
     margin-top: 30px;
 }
 
-.btn-add-wish {
-    margin-left: 5px;
-}
-
 .card {
     margin-bottom: 10px;
+}
+
+.card-footer .btn {
+    margin-right: 7px;
+    margin-bottom: 5px;
 }
 
 /* Modal */
@@ -46,10 +53,12 @@
     justify-content: flex-start;
 }
 
-/* Desktop */
-@media (min-width: 992px) {
 
-    /* Navbar */
+
+
+/* Web responsive */
+
+@media (min-width: 992px) {
 
     /* Jumbotron */
     .container-jumbo {
@@ -66,11 +75,6 @@
         padding-top: 100px;
     }
 
-    /* Card */
-    .card {
-        width: 21rem;
-    }
-
     /* Modal */
     .modal-footer button {
         position: relative;
@@ -78,8 +82,23 @@
     }
 }
 
-/* Handphone */
-@media (min-width: 575px) {
+@media (min-width: 768px) and (max-width: 992px) {
+
+    /* card */
+    .card {
+        width: 19rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* card */
+    .card {
+        width: 32rem;
+    }
+}
+
+@media (min-width: 576px) {
 
     /* Jumbotron */
     .jumbotron {
