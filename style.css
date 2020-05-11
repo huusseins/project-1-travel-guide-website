@@ -5,6 +5,12 @@
     padding-bottom: 18px;
 }
 
+.navbar-brand img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
 .nav-link {
     margin-left: 20px;
 }
@@ -20,7 +26,10 @@
 
 /* Jumbotron */
 .jumbotron {
+    text-align: center;
     background-color: #007bff;
+    background-image: url(img/hero-img.png);
+    background-size: cover;
     padding-top: 70px;
 }
 
@@ -61,23 +70,29 @@
 @media (min-width: 992px) {
 
     /* Jumbotron */
+    .jumbotron {
+        height: 265px;
+    }
+
     .container-jumbo {
         width: 750px;
         position: relative;
         left: 50%;
         margin-right: -50%;
-        margin-top: 50px;
         transform: translate(-50%, -50%);
         z-index: 1;
     }
 
-    .jumbotron {
-        padding-top: 100px;
+    .container-jumbo .container {
+        margin-top: 75px;
     }
 
     /* Card */
     .card {
         min-width: 21rem;
+        max-width: 38rem;
+        margin: auto;
+        margin-bottom: 20px;
     }
 
     /* Modal */
@@ -92,6 +107,9 @@
     /* card */
     .card {
         min-width: 19rem;
+        max-width: 38rem;
+        margin: auto;
+        margin-bottom: 20px;
     }
 }
 

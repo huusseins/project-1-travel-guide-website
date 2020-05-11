@@ -3,7 +3,7 @@ function showAllCard() {
     $.getJSON('destinasi.json', function (data) {
         let destinasi = data.destinasi;
         $.each(destinasi, function (i, data) {
-            $('#destination-list').append('<div class="col-sm"><div class="card"><img class="img-fluid" src="img/' + data.image + '" alt=""><div class="card-body"><h5 class="card-title"> ' + data.attraction + '</h5><p class="card-subtitle text-muted"> ' + data.location + ', ' + data.country + ' </p><br><p class="card-text"> ' + data.summary + ' </p></div><div class="card-footer"><span class="h6">Total expenses: </span><span class="h6 text-primary">US$  ' + data.price + ' </span><br><br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">See more </button><a href="#" class="btn btn-outline-danger">Add to wishlist</a></div></div>')
+            $('#destination-list').append('<div class="col-sm"><div class="card"><img class="img-fluid" src="img/' + data.image + '" alt=""><div class="card-body"><h5 class="card-title"> ' + data.attraction + '</h5><p class="card-subtitle text-muted"> ' + data.location + ', ' + data.country + ' </p><br><p class="card-text"> ' + data.summary + ' </p></div><div class="card-footer"><span class="h6">Total expenses: </span><span class="h6 text-primary">US$  ' + data.price + ' </span><br><br><button type="button" class="btn btn-primary" id="btn-modal" data-toggle="modal" data-target="#exampleModalCenter">See more </button><a href="#" class="btn btn-outline-danger">Add to wishlist</a></div></div>')
         });
     });
 }
@@ -15,11 +15,12 @@ $('.dropdown-item').on('click', function () {
     let negara = $(this).html();
 
     if (negara == 'All location') {
+
+        $("#destination-list").html("");
         showAllCard();
         $('.dropdown-toggle').html('All location');
         return;
     };
-    console.log(negara);
     $.getJSON('destinasi.json', function (data) {
         let destinasi = data.destinasi;
         let content = '';
@@ -34,27 +35,26 @@ $('.dropdown-item').on('click', function () {
     });
 });
 
-$('#btn-modal').on('click', function () {
 
-    $.getJSON('destinasi.json', function (data) {
-        let destinasi = data.destinasi;
-        let contentCard = $('.')
-        let content = '';
+// $('#btn-modal').on('click', function () {
+//     let contentCard = $(this).html();
+//     console.log(contentCard);
+// $.getJSON('destinasi.json', function (data) {
+//     let destinasi = data.destinasi;
 
-        $.each(destinasi, function (i, data) {
-            if ()
-                $('.modal-content')
-        })
+//     $.each(destinasi, function (i, data) {
+//         if (data.attraction == contentCard) {
+//             $('.modal-content').append('<div class="modal-header"><h5 class="modal-title" id="exampleModalCenterTitle"> ' + data.attraction + ' </h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="img-fluid" src="img/ ' + data.image + ' " alt=" ' + data.attraction + ' "><br><br><h5 class="card-subtitle"> ' + data.location + ', ' + data.country + ' </h5><br><p class="card-text"> ' + data.description + ' </p></div><div class="modal-footer"><div class="ket-expenses-modal"><span class="h6">Total expenses: </span><span class="h6 text-primary">US$ ' + data.price + ' </span></div><button type="button" class="btn btn-outline-danger btn-add-wish">Add to wishlist</button></div>')
+//         }
+//     });
+// });
+// });
 
-    });
-});
-// $(document).ready(function () {
-// Fungsi pake event on click
+// Search bar
 $("#searchButton").on("click", function () {
     $("#destination-list").html("");
-    var textValue = $("#searchText").val(); // ambil value dari search bar
-    var res = textValue.toLowerCase(); // string nya di kecilin semua hurufnya biar engga case sensitive pas nyari
-    //console.log(textValue); // ini buat ngecek value kalo di js
+    var textValue = $("#searchText").val();
+    var res = textValue.toLowerCase();
 
     var state = false;
     $.getJSON('destinasi.json', function (data) {
@@ -68,12 +68,12 @@ $("#searchButton").on("click", function () {
 
             if (res == null) {
                 state = true;
-                $('#destination-list').append('<div class="col-sm"><div class="card"><img class="img-fluid" src="img/' + data.image + '" alt=""><div class="card-body"><h5 class="card-title"> ' + data.attraction + '</h5><p class="card-subtitle text-muted"> ' + data.location + ', ' + data.country + ' </p><br><p class="card-text"> ' + data.summary + ' </p></div><div class="card-footer"><span class="h6">Total expenses: </span><span class="h6 text-primary">US$  ' + data.price + ' </span><br><br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">See more </button><a href="#" class="btn btn-outline-danger">Add to wishlist</a></div></div>')
+                $('#destination-list').append('<div class="col-sm"><div class="card"><img class="img-fluid" src="img/' + data.image + '" alt=""><div class="card-body"><h5 class="card-title"> ' + data.attraction + '</h5><p class="card-subtitle text-muted"> ' + data.location + ', ' + data.country + ' </p><br><p class="card-text"> ' + data.summary + ' </p></div><div class="card-footer"><span class="h6">Total expenses: </span><span class="h6 text-primary">US$  ' + data.price + ' </span><br><br><button type="button" class="btn btn-primary" id="btn-modal" data-toggle="modal" data-target="#exampleModalCenter">See more </button><a href="#" class="btn btn-outline-danger">Add to wishlist</a></div></div>')
             } else {
                 //filter
                 if (country.includes(res) || attraction.includes(res) || location.includes(res) || summary.includes(res) || price == res) {
                     state = true;
-                    $('#destination-list').append('<div class="col-sm"><div class="card"><img class="img-fluid" src="img/' + data.image + '" alt=""><div class="card-body"><h5 class="card-title"> ' + data.attraction + '</h5><p class="card-subtitle text-muted"> ' + data.location + ', ' + data.country + ' </p><br><p class="card-text"> ' + data.summary + ' </p></div><div class="card-footer"><span class="h6">Total expenses: </span><span class="h6 text-primary">US$  ' + data.price + ' </span><br><br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">See more </button><a href="#" class="btn btn-outline-danger">Add to wishlist</a></div></div>')
+                    $('#destination-list').append('<div class="col-sm"><div class="card"><img class="img-fluid" src="img/' + data.image + '" alt=""><div class="card-body"><h5 class="card-title"> ' + data.attraction + '</h5><p class="card-subtitle text-muted"> ' + data.location + ', ' + data.country + ' </p><br><p class="card-text"> ' + data.summary + ' </p></div><div class="card-footer"><span class="h6">Total expenses: </span><span class="h6 text-primary">US$  ' + data.price + ' </span><br><br><button type="button" class="btn btn-primary" id="btn-modal" data-toggle="modal" data-target="#exampleModalCenter">See more </button><a href="#" class="btn btn-outline-danger">Add to wishlist</a></div></div>')
                 }
             }
         });
@@ -83,7 +83,6 @@ $("#searchButton").on("click", function () {
     });
 });
 
-// fungsi biar kalo di searchbar teken enter sama aja kayak click tombol search
 var input = document.getElementById("searchText");
 input.addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {
@@ -91,4 +90,3 @@ input.addEventListener("keyup", function (event) {
         document.getElementById("searchButton").click();
     }
 });
-// });

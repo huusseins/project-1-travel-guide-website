@@ -67,9 +67,18 @@
             "attraction": "Belitung Island",
             "location": "Bangka Belitung",
             "summary": "Belitung Island has become a new favourite island-themed holiday destination among tourists located south-east off the larger island of Sumatra. This island is now determined to reach its goal to become one of world’s best Geoparks.",
-            "description": "Belitung Island has become a new favourite island-themed holiday destination among tourists located south-east off the larger island of Sumatra.  With its impeccable pristine beaches, blue waters and natural granite rock structures, its hard not to linger on its beauty. Well known after the success of the box office Indonesian movie Laskar Pelangi or Rainbow Troops, this island is now determined to reach its goal to become one of world’s best Geoparks.<br><br>A Global Geopark is a UNESCO-designated area, that contains natural sites with particular geological importance and are intended to be conserved on account of its heritage. Tourism is expected to act as booster to spread knowledge and awareness of this unique natural wonder. Here are a few  for you to start your incredible holiday :",
+            "description": "Belitung Island has become a new favourite island-themed holiday destination among tourists located south-east off the larger island of Sumatra.  With its impeccable pristine beaches, blue waters and natural granite rock structures, its hard not to linger on its beauty. Well known after the success of the box office Indonesian movie Laskar Pelangi or Rainbow Troops, this island is now determined to reach its goal to become one of world’s best Geoparks.<br><br>A Global Geopark is a UNESCO-designated area, that contains natural sites with particular geological importance and are intended to be conserved on account of its heritage. Tourism is expected to act as booster to spread knowledge and awareness of this unique natural wonder. Here are a few  for you to start your incredible holiday.",
             "price": 1200,
             "image": "belitung.jpg"
+        },
+        {
+            "country": "Japan",
+            "attraction": "Osaka Castle",
+            "location": "Osaka",
+            "summary": "The construction of Osaka Castle (大阪城, Ōsakajō) started in 1583 on the former site of the Ishiyama Honganji Temple. Toyotomi Hideyoshi intended the castle to become the center of a new, unified Japan under Toyotomi rule.",
+            "description": "The construction of Osaka Castle (大阪城, Ōsakajō) started in 1583 on the former site of the Ishiyama Honganji Temple, which had been destroyed by Oda Nobunaga thirteen years earlier. Toyotomi Hideyoshi intended the castle to become the center of a new, unified Japan under Toyotomi rule. It was the largest castle at the time.<br><br>However, a few years after Hideyoshi's death, Tokugawa troops attacked and destroyed the castle and terminated the Toyotomi lineage in 1615. Osaka Castle was rebuilt by Tokugawa Hidetada in the 1620s, but its main castle tower was struck by lightening in 1665 and burnt down.",
+            "price": 8700,
+            "image": "osaka.jpg"
         }
     ]
 }
