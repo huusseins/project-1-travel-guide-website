@@ -8,6 +8,7 @@ Ini adalah project website pertama pertama Saya. Masih jauh dari sempurna namun 
   4. Modal untuk melihat detail tujuan
   5. Fitur add wishlist
   6. Fitur remove wishlist (tambahan)
+  
 Jika ada kekurangan dan kesalahan mohon segera beritahu Saya agar segera diperbaiki.
 
 Terima kasih
