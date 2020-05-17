@@ -41,8 +41,9 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Total price: US$ 0"
-                        aria-label="Total price">
+                    <input class="form-control mr-sm-2 totalPrice" type="text" placeholder="Total price: US$ 0"
+                        readonly>
+                    <div class="hiddenDiv"></div>
                 </form>
             </div>
         </div>
@@ -61,13 +62,13 @@
                             <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">All location</button>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">All location</a>
+                                <a class="dropdown-item">All location</a>
                                 <div role="separator" class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Indonesia</a>
-                                <a class="dropdown-item" href="#">Japan</a>
-                                <a class="dropdown-item" href="#">Switzerland</a>
-                                <a class="dropdown-item" href="#">Thailand</a>
-                                <a class="dropdown-item" href="#">Turkey</a>
+                                <a class="dropdown-item">Indonesia</a>
+                                <a class="dropdown-item">Japan</a>
+                                <a class="dropdown-item">Switzerland</a>
+                                <a class="dropdown-item">Thailand</a>
+                                <a class="dropdown-item">Turkey</a>
                             </div>
                         </div>
                         <input type="text" class="form-control" aria-label="Text input with dropdown button"
@@ -87,42 +88,34 @@
     <!-- Card -->
     <div class="container container-card">
         <div class="row" id="destination-list">
+            <!-- <div class="col-sm">
+                <div class="card">
+                    <img class="img-fluid" src="img/' + data.image + '" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title"> ' + data.attraction + '</h5>
+                        <p class="card-subtitle text-muted"> ' + data.location + ', ' + data.country + ' </p><br>
+                        <p class="card-text"> ' + data.summary + ' </p>
+                    </div>
+                    <div class="card-footer"><span class="h6">Total expenses: </span><span
+                            class="h6 text-primary totalExpenses">US$ ' + data.price + ' </span><br><br><button
+                            type="button" class="btn btn-primary button-modal-detail" data-toggle="modal"
+                            data-target="#destinationDetailModal" data-destinationid="' + data.attraction + '">See more
+                        </button><button type="button" class="btn btn-outline-danger btn-wishlist">Add to
+                            wishlist</button>
+                    </div>
+                </div> -->
         </div>
     </div>
     <!-- end of Card -->
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Cappadocia</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img class="img-fluid" src="img/cappadocia2.jpg" alt="Cappadocia">
-                    <br><br>
-                    <h5 class="card-subtitle">Central Anatolia, Turkey</h5>
-                    <br>
-                    <p class="card-text"></p>
-                </div>
-                <div class="modal-footer">
-                    <div class="ket-expenses-modal">
-                        <span class="h6">Total expenses: </span>
-                        <span class="h6 text-primary">US$ 20,000</span>
-                    </div>
-                    <button type="button" class="btn btn-outline-danger btn-add-wish">Add to
-                        wishlist</button>
-                </div>
-            </div>
+    <div class="modal fade" id="destinationDetailModal" tabindex="-1" role="dialog"
+        aria-labelledby="destinationDetailModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
         </div>
     </div>
     <!-- end of Modal -->
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
