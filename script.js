@@ -13,7 +13,7 @@ showAllCard()
 $(document).ready(function () {
 
     // Search bar
-    const handleSearchBox = () => {
+    const searchDestination = () => {
         let searchTextValue = document.querySelector('#searchText').value
         let cardDeck = document.querySelector('#destination-list').children
 
@@ -33,21 +33,21 @@ $(document).ready(function () {
     }
 
     let searchText = document.querySelector('#searchText')
-    searchText.addEventListener('keyup', handleSearchBox)
+    searchText.addEventListener('keyup', searchDestination)
 
     // Filter dropdown
     $('.dropdown-item').on('click', function () {
-        let negara = $(this).html();
+        let negara = $(this).html()
 
         if (negara == 'All location') {
 
-            $('#destination-list').html('');
-            showAllCard();
-            $('.dropdown-toggle').html('All location');
+            $('#destination-list').html('')
+            showAllCard()
+            $('.dropdown-toggle').html('All location')
             return;
         };
         $.getJSON('destinasi.json', function (data) {
-            let destinasi = data.destinasi;
+            let destinasi = data.destinasi
             let content = '';
 
             $.each(destinasi, function (i, data) {
